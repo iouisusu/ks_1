@@ -1,0 +1,102 @@
+2024-12-18 02:02:01,224 - test2.py[line:415] - INFO: create prog success
+2024-12-18 02:02:01,224 - test2.py[line:416] - INFO: train config: {'input_size': [3, 512, 512], 'class_dim': 10, 'image_count': 4348, 'label_dict': {'erli': 0, 'gls': 1, 'hym': 2, 'hzs': 3, 'jqs': 4, 'jss': 5, 'pths': 6, 'slzs': 7, 'szs': 8, 'yqs': 9}, 'data_dir': '../data/data1', 'train_file_list': 'train.txt', 'label_file': 'label_list.txt', 'save_freeze_dir': './freeze-model', 'save_persistable_dir': './persistable-params', 'continue_train': True, 'pretrained': False, 'pretrained_dir': 'data/data6593/DenseNet_pretrained', 'mode': 'train', 'num_epochs': 5, 'train_batch_size': 4, 'mean_rgb': [127.5, 127.5, 127.5], 'use_gpu': True, 'dropout_prob': 0.2, 'dropout_seed': None, 'image_enhance_strategy': {'need_distort': False, 'need_rotate': False, 'need_crop': True, 'need_flip': False, 'hue_prob': 0.5, 'hue_delta': 18, 'contrast_prob': 0.5, 'contrast_delta': 0.5, 'saturation_prob': 0.5, 'saturation_delta': 0.5, 'brightness_prob': 0.5, 'brightness_delta': 0.125, 'rotate_prob': 0.5, 'rotate_range': 14}, 'early_stop': {'sample_frequency': 20, 'successive_limit': 3, 'good_acc1': 0.6}, 'rsm_strategy': {'learning_rate': 0.002, 'lr_epochs': [5], 'lr_decay': [1, 0.5]}}
+2024-12-18 02:02:01,225 - test2.py[line:417] - INFO: build input custom reader and data feeder
+2024-12-18 02:02:01,226 - test2.py[line:431] - INFO: build newwork
+2024-12-18 02:02:06,628 - test2.py[line:398] - INFO: load params from retrain model
+2024-12-18 02:02:08,619 - test2.py[line:457] - INFO: current pass: 0, start read image
+2024-12-18 02:02:11,740 - test2.py[line:477] - INFO: current acc1 1.0 meets good 0.6, successive count 1
+2024-12-18 02:02:15,084 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:17,615 - test2.py[line:471] - INFO: Pass 0, trainbatch 10, loss 1.5034974813461304, acc1 0.5, time 0.27 sec
+2024-12-18 02:02:17,877 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:21,890 - test2.py[line:471] - INFO: Pass 0, trainbatch 20, loss 1.6597038507461548, acc1 0.25, time 0.26 sec
+2024-12-18 02:02:21,890 - test2.py[line:493] - INFO: temp save 20 batch train result, current acc1 0.25
+2024-12-18 02:02:27,490 - test2.py[line:471] - INFO: Pass 0, trainbatch 30, loss 1.5660769939422607, acc1 0.25, time 0.26 sec
+2024-12-18 02:02:28,308 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:30,593 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:33,406 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:35,126 - test2.py[line:471] - INFO: Pass 0, trainbatch 40, loss 0.8402159810066223, acc1 0.75, time 0.14 sec
+2024-12-18 02:02:35,126 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 2
+2024-12-18 02:02:36,866 - test2.py[line:493] - INFO: temp save 40 batch train result, current acc1 0.75
+2024-12-18 02:02:41,255 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:42,947 - test2.py[line:471] - INFO: Pass 0, trainbatch 50, loss 2.7722792625427246, acc1 0.0, time 0.14 sec
+2024-12-18 02:02:43,211 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:45,106 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 2
+2024-12-18 02:02:48,557 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:50,430 - test2.py[line:471] - INFO: Pass 0, trainbatch 60, loss 1.7313810586929321, acc1 0.5, time 0.14 sec
+2024-12-18 02:02:50,430 - test2.py[line:493] - INFO: temp save 60 batch train result, current acc1 0.5
+2024-12-18 02:02:53,005 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:02:56,338 - test2.py[line:471] - INFO: Pass 0, trainbatch 70, loss 1.237946629524231, acc1 0.5, time 0.26 sec
+2024-12-18 02:02:59,171 - test2.py[line:471] - INFO: Pass 0, trainbatch 80, loss 1.627577543258667, acc1 0.5, time 0.30 sec
+2024-12-18 02:02:59,171 - test2.py[line:493] - INFO: temp save 80 batch train result, current acc1 0.5
+2024-12-18 02:03:02,435 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:07,587 - test2.py[line:471] - INFO: Pass 0, trainbatch 90, loss 1.452140212059021, acc1 0.25, time 0.27 sec
+2024-12-18 02:03:08,518 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:11,580 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:14,862 - test2.py[line:471] - INFO: Pass 0, trainbatch 100, loss 1.3895759582519531, acc1 0.5, time 0.27 sec
+2024-12-18 02:03:14,862 - test2.py[line:493] - INFO: temp save 100 batch train result, current acc1 0.5
+2024-12-18 02:03:18,794 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:21,324 - test2.py[line:471] - INFO: Pass 0, trainbatch 110, loss 1.3829634189605713, acc1 0.75, time 0.29 sec
+2024-12-18 02:03:21,324 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:26,614 - test2.py[line:471] - INFO: Pass 0, trainbatch 120, loss 3.0090131759643555, acc1 0.0, time 0.27 sec
+2024-12-18 02:03:26,614 - test2.py[line:493] - INFO: temp save 120 batch train result, current acc1 0.0
+2024-12-18 02:03:31,165 - test2.py[line:471] - INFO: Pass 0, trainbatch 130, loss 1.6239659786224365, acc1 0.25, time 0.27 sec
+2024-12-18 02:03:32,281 - test2.py[line:477] - INFO: current acc1 1.0 meets good 0.6, successive count 1
+2024-12-18 02:03:35,286 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:38,434 - test2.py[line:471] - INFO: Pass 0, trainbatch 140, loss 1.185795545578003, acc1 0.75, time 0.27 sec
+2024-12-18 02:03:38,434 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:40,146 - test2.py[line:493] - INFO: temp save 140 batch train result, current acc1 0.75
+2024-12-18 02:03:43,466 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:46,488 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:48,634 - test2.py[line:471] - INFO: Pass 0, trainbatch 150, loss 2.495325803756714, acc1 0.25, time 0.26 sec
+2024-12-18 02:03:51,096 - test2.py[line:477] - INFO: current acc1 1.0 meets good 0.6, successive count 1
+2024-12-18 02:03:53,004 - test2.py[line:471] - INFO: Pass 0, trainbatch 160, loss 1.4858992099761963, acc1 0.25, time 0.14 sec
+2024-12-18 02:03:53,004 - test2.py[line:493] - INFO: temp save 160 batch train result, current acc1 0.25
+2024-12-18 02:03:55,701 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:03:58,255 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:00,769 - test2.py[line:471] - INFO: Pass 0, trainbatch 170, loss 2.1264572143554688, acc1 0.25, time 0.27 sec
+2024-12-18 02:04:01,861 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:04,980 - test2.py[line:471] - INFO: Pass 0, trainbatch 180, loss 1.0528062582015991, acc1 0.5, time 0.27 sec
+2024-12-18 02:04:04,980 - test2.py[line:493] - INFO: temp save 180 batch train result, current acc1 0.5
+2024-12-18 02:04:09,637 - test2.py[line:471] - INFO: Pass 0, trainbatch 190, loss 1.993391990661621, acc1 0.25, time 0.27 sec
+2024-12-18 02:04:12,373 - test2.py[line:471] - INFO: Pass 0, trainbatch 200, loss 1.7754101753234863, acc1 0.75, time 0.27 sec
+2024-12-18 02:04:12,373 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:14,200 - test2.py[line:493] - INFO: temp save 200 batch train result, current acc1 0.75
+2024-12-18 02:04:19,148 - test2.py[line:471] - INFO: Pass 0, trainbatch 210, loss 0.9702039957046509, acc1 0.5, time 0.27 sec
+2024-12-18 02:04:19,414 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:21,177 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 2
+2024-12-18 02:04:25,364 - test2.py[line:471] - INFO: Pass 0, trainbatch 220, loss 1.6450519561767578, acc1 0.5, time 0.27 sec
+2024-12-18 02:04:25,365 - test2.py[line:493] - INFO: temp save 220 batch train result, current acc1 0.5
+2024-12-18 02:04:27,720 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:29,722 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:32,116 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:34,353 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:36,206 - test2.py[line:471] - INFO: Pass 0, trainbatch 230, loss 2.2447872161865234, acc1 0.5, time 0.15 sec
+2024-12-18 02:04:37,820 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:40,200 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:42,028 - test2.py[line:471] - INFO: Pass 0, trainbatch 240, loss 1.6534777879714966, acc1 0.0, time 0.14 sec
+2024-12-18 02:04:42,028 - test2.py[line:493] - INFO: temp save 240 batch train result, current acc1 0.0
+2024-12-18 02:04:46,335 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:47,987 - test2.py[line:471] - INFO: Pass 0, trainbatch 250, loss 1.8786009550094604, acc1 0.25, time 0.14 sec
+2024-12-18 02:04:49,603 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:52,457 - test2.py[line:471] - INFO: Pass 0, trainbatch 260, loss 1.5825109481811523, acc1 0.5, time 0.26 sec
+2024-12-18 02:04:52,457 - test2.py[line:493] - INFO: temp save 260 batch train result, current acc1 0.5
+2024-12-18 02:04:54,470 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:04:58,343 - test2.py[line:471] - INFO: Pass 0, trainbatch 270, loss 1.262906551361084, acc1 0.5, time 0.27 sec
+2024-12-18 02:05:01,054 - test2.py[line:471] - INFO: Pass 0, trainbatch 280, loss 1.705708622932434, acc1 0.25, time 0.27 sec
+2024-12-18 02:05:01,054 - test2.py[line:493] - INFO: temp save 280 batch train result, current acc1 0.25
+2024-12-18 02:05:05,226 - test2.py[line:477] - INFO: current acc1 1.0 meets good 0.6, successive count 1
+2024-12-18 02:05:07,105 - test2.py[line:471] - INFO: Pass 0, trainbatch 290, loss 1.457419753074646, acc1 0.0, time 0.14 sec
+2024-12-18 02:05:07,928 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:05:11,219 - test2.py[line:471] - INFO: Pass 0, trainbatch 300, loss 1.9777698516845703, acc1 0.25, time 0.26 sec
+2024-12-18 02:05:11,219 - test2.py[line:493] - INFO: temp save 300 batch train result, current acc1 0.25
+2024-12-18 02:05:13,328 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:05:15,182 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 2
+2024-12-18 02:05:17,121 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:05:19,654 - test2.py[line:477] - INFO: current acc1 1.0 meets good 0.6, successive count 1
+2024-12-18 02:05:21,873 - test2.py[line:471] - INFO: Pass 0, trainbatch 310, loss 1.5030155181884766, acc1 0.5, time 0.26 sec
+2024-12-18 02:05:24,051 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 1
+2024-12-18 02:05:25,889 - test2.py[line:477] - INFO: current acc1 1.0 meets good 0.6, successive count 2
+2024-12-18 02:05:27,553 - test2.py[line:471] - INFO: Pass 0, trainbatch 320, loss 1.3391964435577393, acc1 0.75, time 0.14 sec
+2024-12-18 02:05:27,554 - test2.py[line:477] - INFO: current acc1 0.75 meets good 0.6, successive count 3
+2024-12-18 02:05:29,252 - test2.py[line:485] - INFO: end training
+2024-12-18 02:05:29,255 - test2.py[line:499] - INFO: training till last epcho, end training
